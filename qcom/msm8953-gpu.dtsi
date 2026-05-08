@@ -272,6 +272,7 @@
 		gfx3d_secure: gfx3d_secure {
 			compatible = "qcom,smmu-kgsl-cb";
 			iommus = <&kgsl_smmu 2>;
+			qcom,iommu-dma = "disabled";
 			memory-region = <&secure_mem>;
 		};
 	};
